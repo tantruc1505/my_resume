@@ -1,0 +1,1388 @@
+
+
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: var(--ColorMain);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px var(--ColorMain);
+  outline: 0 none;
+}
+
+body {
+  color: var(--ColorText);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--ColorTitle);
+}
+
+a {
+  text-decoration: none !important;
+}
+
+small {
+  color: var(--ColorSmall);
+}
+
+button {
+  cursor: pointer;
+}
+
+
+/* THEME */
+.changeTheme{
+  margin-top:35px;
+}
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--ColorMain);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 19px;
+  width: 19px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: silver;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px silver;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(21px);
+  -ms-transform: translateX(21px);
+  transform: translateX(21px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*
+        Custom CLass
+*/
+.openMenu {
+  opacity: 1 !important;
+  top: 0 !important;
+}
+
+/*
+        Body Left
+*/
+.overplayMeny {
+  opacity: 0;
+  transition: all 0.5s ease 0s;
+  position: absolute;
+  z-index: 1000;
+  width: 40%;
+  height: 100%;
+  top: -100%;
+  background: var(--ColorFooter);
+}
+.overplayMeny .navbar-menu {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.overplayMeny .navbar-menu .nav-menu {
+  vertical-align: middle;
+  display: table-cell;
+  list-style-type: none;
+  padding: 0;
+}
+.overplayMeny .navbar-menu .nav-menu li {
+  margin: 15px auto;
+  position: relative;
+  width: 250px;
+}
+.overplayMeny .navbar-menu .nav-menu li a {
+  letter-spacing: 1.2px;
+  line-height: 30px;
+  color: white;
+}
+.overplayMeny .navbar-menu .nav-menu li a:hover i {
+  color: var(--ColorMain);
+}
+.overplayMeny .navbar-menu .nav-menu li a:hover span::after {
+  opacity: 1;
+  width: 200px;
+}
+.overplayMeny .navbar-menu .nav-menu li a i {
+  width: 18px;
+  transition: all 0.3s linear;
+}
+.overplayMeny .navbar-menu .nav-menu li a span {
+  position: relative;
+  display: inline-block;
+}
+.overplayMeny .navbar-menu .nav-menu li a span::after {
+  content: '';
+  position: absolute;
+  opacity: 0;
+  width: 0px;
+  height: 1px;
+  transition: all 0.3s linear;
+  background: white;
+  left: 0;
+  bottom: 0;
+}
+
+.nav-link.active i {
+  color: var(--ColorMain) !important;
+}
+.nav-link.active span::after {
+  opacity: 1 !important;
+  width: 200px !important;
+}
+
+#divLeft {
+  position: relative;
+  width: 40%;
+}
+
+#divLeft .imgBackground {
+  height: 100vh;
+}
+#divLeft .imgBackground #particle-canvas {
+  width: 100%;
+  height: 100%;
+}
+#divLeft .contentLeft {
+  position: absolute;
+  padding: 0 25px;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  display: table;
+}
+#divLeft .contentLeft .banner-content {
+  height: 100vh;
+  display: table-cell;
+  width: 100%;
+  vertical-align: middle;
+}
+#divLeft .contentLeft .banner-content span,
+#divLeft .contentLeft .banner-content h1 {
+  color: white;
+}
+#divLeft .contentLeft .banner-content h1 {
+  font-size: 55px;
+  font-weight: 600;
+}
+#divLeft .contentLeft .banner-content span {
+  font-size: 22px;
+}
+#divLeft .contentLeft .banner-content a {
+  color: white;
+  font-size: 16px;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+}
+#divLeft .contentLeft .banner-content a:hover {
+  color: var(--ColorMain);
+}
+#divLeft .contentLeft .banner-content .titleJob h2 {
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  font-size: 26px;
+  margin: 10px 0 40px;
+  color: white;
+}
+#divLeft .contentLeft .banner-content .titleJob b {
+  color: var(--ColorMain);
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+}
+#divLeft .contentLeft .banner-content .myStatus {
+  position: relative;
+}
+#divLeft .contentLeft .banner-content .myStatus::before {
+  position: absolute;
+  content: '';
+  height: 1px;
+  width: 29%;
+  background: white;
+  left: 25px;
+  top: 12px;
+  opacity: .4;
+}
+#divLeft .contentLeft .banner-content .myStatus .animCircle::after, #divLeft .contentLeft .banner-content .myStatus .animCircle::before {
+  content: '';
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: var(--ColorMain);
+  position: absolute;
+  left: 0;
+  top: -13px;
+  animation: AniCircle 1.8s ease-in infinite;
+}
+@keyframes AniCircle {
+  from {
+    transform: scale(0);
+    opacity: 0.8;
+  }
+  to {
+    transform: scale(1);
+    opacity: 0.1;
+  }
+}
+#divLeft .contentLeft .banner-content .myStatus .animCircle::after {
+  animation-delay: -.8s;
+}
+
+/*
+        Body RIght
+*/
+.content {
+  color: var(--ColorText);
+  margin-top: 60px;
+}
+.content .myImg {
+  border: 5px solid var(--BGMain);
+  box-shadow: var(--ShadowImage)
+}
+.content .myBtn {
+  margin-top: 30px;
+  background-color: var(--BGColorBtn);
+  transition: all .2s ease-in-out;
+  color: var(--ColorWhite);
+  font-weight: 600;
+  padding: 20px 25px;
+  border-radius: 0;
+  border: 1px solid var(--ColorBorderBtn);
+}
+.content .myBtn:hover {
+  border: 1px solid var(--ColorMain) !important;
+}
+.content .info .label {
+  color: var(--ColorWhite);
+  width: 95px;
+  float: left;
+}
+.content .info .value {
+  width: calc(100% - 95px);
+  float: left;
+}
+.content .info .group:not(:nth-of-type(1)) {
+  margin-top: 10px;
+}
+
+.bodycontent {
+  padding: 65px 40px;
+}
+
+/* Roll Button */
+.social-btn-roll {
+  background: transparent;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  display: block;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.social-btns {
+  padding: 0;
+  list-style-type: none;
+}
+.social-btns li:not(:nth-of-type(1)) {
+  margin-left: 10px;
+}
+
+.social-btn-roll:hover .social-btn-roll-icons {
+  -webkit-transform: translate3d(-50%, 0, 0);
+  transform: translate3d(-50%, 0, 0);
+}
+
+.social-btn-roll:hover .social-btn-roll-icon {
+  color: var(--Colorvar(--ColorWhite));
+}
+
+.social-btn-roll-icons {
+  width: 200%;
+  -webkit-transition: transform 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.social-btn-roll-icons:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.social-btn-roll-icon {
+  width: 50%;
+  line-height: 40px;
+  text-align: center;
+  display: block;
+  float: left;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.social-btn-roll.twitter {
+  /* border-color: #4cc4f2; */
+  color: #4cc4f2;
+}
+
+.social-btn-roll.twitter:hover {
+  background: #4cc4f2;
+  /* border-color: #4cc4f2; */
+}
+
+.social-btn-roll.facebook {
+  /* border-color: #3b5998; */
+  color: #3b5998;
+}
+
+.social-btn-roll.facebook:hover {
+  background: #3b5998;
+  /* border-color: #3b5998; */
+}
+
+.social-btn-roll.google {
+  /* border-color: #dd4b39; */
+  color: #dd4b39;
+}
+
+.social-btn-roll.google:hover {
+  background: #dd4b39;
+  /* border-color: #dd4b39; */
+}
+
+.social-btn-roll.instagram {
+  /* border-color: #9b6954; */
+  color: #9b6954;
+}
+
+.social-btn-roll.instagram:hover {
+  background: #9b6954;
+  /* border-color: #9b6954; */
+}
+
+.social-btn-roll {
+  border: 1px solid var(--ColorBorderIcon);
+  color: var(--ColorWhite) !important;
+}
+
+.social-btn-roll:hover {
+  border: 1px solid var(--ColorMain) !important;
+  background: none !important;
+  color: var(--ColorWhite) !important;
+}
+
+#divRight {
+  width: 60%;
+  height: 100vh;
+  overflow-Y: scroll;
+  background: var(--BGMain);
+}
+#divRight #AboutMe h2 {
+  color: var(--ColorWhite);
+  letter-spacing: 1px;
+  position: relative;
+}
+#divRight #AboutMe h2::after {
+  position: absolute;
+  content: '';
+  width: 50px;
+  height: 3px;
+  bottom: -15px;
+  left: 0;
+  background: var(--ColorMain);
+}
+#divRight #AboutMe h2 span {
+  color: var(--ColorMain);
+}
+#divRight #AboutMe h2::before {
+  content: 'Introduce MySelf';
+  font-size: 12px;
+  color: var(--ColorSmall);
+  position: absolute;
+  bottom: -20px;
+  left: 60px;
+}
+#divRight #AboutMe .content {
+  margin-top: 60px !important;
+}
+#MySkill ul{
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+#divRight #MySkill {
+  background: var(--BGSecondary);
+}
+#divRight #MySkill .box{
+  background: var(--BGMain);
+  padding: 30px;
+  border: 1px solid var(--ColorBorderBtn);
+  margin-top: 20px;
+}
+#divRight #MySkill .box h4{
+  padding-bottom:10px;
+}
+#divRight #MySkill .box li{
+  margin-bottom: 3px;
+  color:var(--ColorText);
+}
+#divRight #MySkill h2 {
+  color: var(--ColorMain);
+  letter-spacing: 1px;
+  position: relative;
+}
+#divRight #MySkill h2::after {
+  position: absolute;
+  content: '';
+  width: 50px;
+  height: 3px;
+  bottom: -15px;
+  left: 0;
+  background: var(--ColorMain);
+}
+#divRight #MySkill h2 span {
+  color: var(--ColorWhite);
+  
+}
+#divRight #MySkill h2::before {
+  content: 'What I can bring to table';
+  font-size: 12px;
+  color: var(--ColorSmall);
+  position: absolute;
+  bottom: -20px;
+  left: 60px;
+}
+#divRight #MySkill .progress {
+  height: 7px !important;
+  background: white;
+}
+#divRight #MySkill .progress .progress-bar {
+  background: var(--ColorMain);
+}
+#divRight #MySkill .nameSkill {
+  font-size: 14px;
+}
+#divRight #MySkill .percent {
+  color: var(--ColorMain);
+  font-size: 14px;
+}
+#divRight #MySkill .content .col-md-6:not(:nth-of-type(1)) {
+  margin-top: 50px;
+}
+#divRight #MySkill .content .col-md-6:nth-of-type(2) {
+  margin-top: 0px;
+}
+#divRight #Experience {
+  background: var(--BGMain);
+}
+#divRight #Experience h2 {
+  color: var(--ColorWhite);
+  letter-spacing: 1px;
+  position: relative;
+}
+#divRight #Experience h2::after {
+  position: absolute;
+  content: '';
+  width: 50px;
+  height: 3px;
+  bottom: -15px;
+  left: 0;
+  background: var(--ColorMain);
+}
+#divRight #Experience h2 span {
+  color: var(--ColorMain);
+
+}
+#divRight #Experience h2::before {
+  content: 'I have learned a lot in my life';
+  font-size: 12px;
+  color: var(--ColorSmall);
+  position: absolute;
+  bottom: -20px;
+  left: 60px;
+}
+#divRight #Experience .time {
+  font-size: 0.9rem;
+  color: var(--ColorText);
+}
+#Experience .content div:last-child > div:first-child > p{
+  padding:6px;
+}
+#divRight #Experience .position {
+  color: var(--ColorSmall);
+  font-style: italic;
+}
+#divRight #Experience .timeline {
+  position: relative;
+}
+#divRight #Experience .timeline ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+#divRight #Experience .timeline .project{
+  margin-top: 40px;
+  position: relative;
+
+  .dvp {
+    margin-bottom: 5px;
+    .tt{
+      margin-left: 10px;
+      font-size: 17px;
+      margin-top: 3px;
+    }
+  }
+}
+
+#divRight #Experience .timeline .project .stt{
+  font-size: 20px;
+  font-weight: 800;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  
+  p {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    display: flex;
+    color: var(--ColorMain);
+    font-size: 15px;
+  }
+  &::before{
+    position: absolute;
+    content:'';
+    width:100%;
+    height: 100%;
+    border: 3px solid var(--ColorSmall);
+    border-radius: 50%;
+    opacity: 0.7;
+  }
+}
+
+#divRight #Experience .timeline .project ul{
+  list-style-type: disc !important;
+  font-size: 1rem;
+}
+#divRight #Experience .timeline .project p {
+  color: var(--ColorText);
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+#divRight #Experience .timeline .project span {
+  color: var(--ColorSmall);
+  font-size:1rem;
+  font-weight: 600;
+}
+#divRight #Experience .timeline ul li .link {
+  color: var(--ColorMain);
+  text-decoration:underline !important;
+  cursor: pointer;
+  margin: 0;
+}
+#divRight #Experience .timeline .in{
+  color: var(--ColorText)
+}
+#divRight #Experience .timeline .des {
+  color: var(--ColorText);
+  font-size: 1rem;
+}
+#divRight #Experience .timeline .tech {
+  color: var(--ColorText)
+}
+#divRight #Experience .timeline::before {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 1px;
+  left: 11px;
+  top: 11px;
+  background: var(--ColorTimeline);
+}
+#divRight #Experience .timeline::before {
+  height:0;
+}
+#divRight #Experience .content > div:not(:last-of-type) .timeline::before{
+  height: calc(100% + 30px);
+}
+#divRight #Experience .timeline::after {
+  position: absolute;
+  content: '';
+  width: 13px;
+  height: 13px;
+  background: var(--ColorMain);
+  left: 5px;
+  border-radius: 50%;
+  top: 10px;
+}
+
+
+.timeline{
+  padding-left:50px
+}
+
+
+#divRight #Education {
+  background: var(--BGMain);
+}
+#divRight #Education h2 {
+  color: var(--ColorMain);
+  letter-spacing: 1px;
+  position: relative;
+}
+#divRight #Education h2::after {
+  position: absolute;
+  content: '';
+  width: 50px;
+  height: 3px;
+  bottom: -15px;
+  left: 0;
+  background: var(--ColorMain);
+}
+#divRight #Education h2 span {
+  color: var(--ColorWhite);
+  
+}
+#divRight #Education h2::before {
+  content: 'Where I become a Web Developer';
+  font-size: 12px;
+  color: var(--ColorSmall);
+  position: absolute;
+  bottom: -20px;
+  left: 60px;
+}
+#divRight #Education .time {
+  font-size: 0.9rem;
+  color: var(--ColorText);
+}
+#divRight #Education .position {
+  color: var(--ColorSmall);
+  font-style: italic;
+}
+#divRight #Education .timeline {
+  position: relative;
+}
+#divRight #Education .timeline::before {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 1px;
+  left: 11px;
+  top: 11px;
+  background: var(--ColorTimeline);
+}
+
+#divRight #Education .timeline::before {
+    height: 0;
+}
+#divRight #Education .content > div:not(:last-of-type) .timeline::before{
+  height: calc(100% + 30px);
+}
+
+#divRight #Education .timeline::after {
+  position: absolute;
+  content: '';
+  width: 13px;
+  height: 13px;
+  background: var(--ColorMain);
+  left: 5px;
+  border-radius: 50%;
+  top: 10px;
+}
+
+
+
+
+
+
+
+#divRight #Portfolio {
+  background: var(--BGSecondary);
+}
+#divRight #Portfolio h2 {
+  color: var(--ColorWhite);
+  letter-spacing: 1px;
+  position: relative;
+}
+#divRight #Portfolio h2::after {
+  position: absolute;
+  content: '';
+  width: 50px;
+  height: 3px;
+  bottom: -15px;
+  left: 0;
+  background: var(--ColorMain);
+}
+#divRight #Portfolio h2 span {
+  color: var(--ColorMain);
+
+}
+#divRight #Portfolio h2::before {
+  content: 'My amazing works';
+  font-size: 12px;
+  color: var(--ColorSmall);
+  position: absolute;
+  bottom: -20px;
+  left: 60px;
+}
+#divRight #Portfolio .btnCate ul {
+  list-style-type: none;
+  padding-left: 15px;
+}
+.borderClick{
+  border: 1px solid var(--ColorMain) !important;
+}
+#divRight #Portfolio .btnCate ul li {
+  background-color: var(--BGColorBtn);
+  transition: all .2s ease-in-out;
+  color: var(--Colorvar(--ColorWhite));
+  font-weight: 600;
+  padding: 12px 25px;
+  border-radius: 0;
+  border: 1px solid var(--ColorBorderBtn);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 5px 25px;
+}
+#divRight #Portfolio .btnCate ul li:hover {
+  border-color: var(--ColorMain);
+}
+#divRight #Portfolio .btnCate ul li:not(:nth-of-type(1)) {
+  margin-left: 15px;
+}
+#divRight #Contact {
+  background: var(--BGSecondary);
+}
+#divRight #Contact h2 {
+  color: var(--ColorWhite);
+  letter-spacing: 1px;
+  position: relative;
+}
+#divRight #Contact h2::after {
+  position: absolute;
+  content: '';
+  width: 50px;
+  height: 3px;
+  bottom: -15px;
+  left: 0;
+  background: var(--ColorMain);
+}
+#divRight #Contact h2 span {
+  color: var(--ColorMain);
+}
+#divRight #Contact h2::before {
+  content: 'Call me, maybe';
+  font-size: 12px;
+  color: var(--ColorSmall);
+  position: absolute;
+  bottom: -20px;
+  left: 60px;
+}
+#divRight #Contact .content span {
+  font-size: 80%;
+}
+#divRight #Contact .content .info .label {
+  color: var(--ColorMain);
+  font-size: 30px;
+  text-shadow: var(--ColorTextShadow);
+  width: 50px;
+}
+#divRight #Contact .content .info .value {
+  width: calc(100%-50px);
+  margin-top: 9px;
+}
+#divRight #Contact .content .info .social {
+  margin-top: 30px !important;
+}
+#divRight #Contact .content .groupform:not(:nth-of-type(1)) {
+  margin-top: 15px;
+}
+#divRight #Contact .content .groupform input, #divRight #Contact .content .groupform textarea {
+  padding: 10px;
+  width: 100%;
+  background: var(--BGColorInput);
+  border: 1px solid var(--ColorBorderBtn);
+}
+#divRight #Contact .content .groupform input:focus, #divRight #Contact .content .groupform textarea:focus {
+  border: 1px solid var(--ColorMain) !important;
+}
+#divRight #Contact .content .btnsend {
+  margin-top: 10px !important;
+  color: var(--ColorWhite) !important;
+  font-size: 15px !important;
+  font-weight: 300 !important;
+  padding: 7px 50px !important;
+  background-color: var(--BGColorBtn);
+  transition: all .2s ease-in-out;
+  color: var(--Colorvar(--ColorWhite));
+  font-weight: 600;
+  padding: 12px 25px;
+  border-radius: 0;
+  border: 1px solid var(--ColorBorderBtn)
+}
+#divRight #Contact .content .btnsend:hover {
+  border: 1px solid var(--ColorMain) !important;
+}
+
+
+.bs-popover-auto[x-placement^=bottom] .arrow::after, .bs-popover-bottom .arrow::after{
+  display: none;
+}
+.bs-popover-auto[x-placement^=bottom] .arrow::before, .bs-popover-bottom .arrow::before{
+  display: none;
+}
+.popover{
+  left:88px !important;
+}
+
+
+/*
+
+      Porfolio
+
+*/
+#Portfolio .ok-col{
+  position: relative;
+  width:100%
+}
+#Portfolio .box{
+  width: calc(100% - 20px);
+  height: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--BGColorInput);
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: var(--BoxshadowBox);
+}
+#Portfolio .box .project{
+  position: absolute;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  left: 50%;
+  color: var(--ColorProject);
+  top: 52px;
+  transform: translateX(-50%);
+}
+
+#Portfolio .box1{
+  position: absolute;
+    width: calc(100% - 21px);
+    height: 200px;
+    top: 0px;
+    left: 10px;
+    right: -2px;
+    bottom: -2px;
+    background: var(--ColorMain);
+    transform: skew(2deg, 2deg);
+}
+
+#Portfolio .box .name{
+  position: absolute;
+  top:50%;
+  width: 100%;
+  padding: 0 20px;
+  transform: translateY(-5px);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+#Portfolio .customBox{
+  width:100%;
+  margin-top:20px;
+  padding-right: 30px;
+}
+#Portfolio .customBox ul{
+  padding:6px
+}
+#Portfolio .customBox div{
+  cursor: default;
+}
+#Portfolio .customBox .name{
+  color: var(--ColorMain);
+  text-decoration: underline !important;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+#Portfolio .customBox div{
+  margin-bottom: 5px;
+}
+#Portfolio .customBox div > span:first-child{
+  color: var(--ColorSmall)
+}
+#Portfolio .customBox div:first-of-type{
+  font-size: 1rem;
+}
+
+
+
+/* Fancybox */
+.fancybox-caption{
+    padding-top: 35px !important;
+    background: black !important;
+}
+.fancybox-caption__body{
+  font-size: 1rem;
+}
+
+
+
+
+
+/*
+        Footer
+*/
+#Footer {
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  color: white;
+  z-index: 1000;
+}
+#Footer span {
+  color: var(--ColorMain);
+}
+
+/*
+        Responsive
+*/
+@media (max-width: 1200px) {
+  .overplayMeny {
+    width: 100%;
+    position: fixed !important;
+  }
+
+  .hamburglar {
+    position: fixed !important;
+  }
+
+  #divLeft {
+    width: 100%;
+    height: 100vh;
+  }
+
+  #divRight {
+    width: 100%;
+    height: auto;
+    overflow: auto;
+  }
+
+  #Footer {
+    position: static;
+    width: 100%;
+    background: var(--ColorFooter);
+  }
+}
+
+@media (max-width: 710px){
+  
+}
+
+@media (max-width: 575px) {
+   #AboutMe .info{
+     margin-top: 30px;
+   }
+
+   #Experience .bodycontent .content > div > div:first-child,
+   #Education .bodycontent .content > div > div:first-child {
+    display: none;
+  }
+  .timeline{
+    padding: 0;
+  }
+  .timeline::before, .timeline::after{
+    display:none;
+  }
+  .timeline .time{
+    display: block  !important;
+    position: absolute;
+    top:0;
+    right:0
+  }
+}
+
+
+
+
+
+
+/*
+        Button Menu Animation
+*/
+.hamburglar {
+  cursor: pointer;
+  transform: scale(0.7);
+  margin: 40px auto;
+  position: absolute;
+  top: -30px;
+  right: 10px;
+  z-index: 1000;
+  display: block;
+  width: 68px;
+  height: 68px;
+  background: transparent;
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+
+.path-burger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 68px;
+  width: 68px;
+  mask: url(#mask);
+  -webkit-mask-box-image: url(https://raygun.io/upload/mask.svg);
+}
+
+.animate-path {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 68px;
+  height: 68px;
+}
+
+.path-rotation {
+  height: 34px;
+  width: 34px;
+  margin: 34px 34px 0 0;
+  transform: rotate(0deg);
+  transform-origin: 100% 0;
+}
+.path-rotation:before {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 34px;
+  margin: 0 4px 0 0;
+  background: white;
+}
+
+@keyframes rotate-out {
+  0% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-in {
+  0% {
+    transform: rotate(360deg);
+  }
+  40% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.hamburglar.is-open .path {
+  animation: dash-in 0.6s linear normal;
+  animation-fill-mode: forwards;
+}
+.hamburglar.is-open .animate-path {
+  animation: rotate-in 0.6s linear normal;
+  animation-fill-mode: forwards;
+}
+
+.hamburglar.is-closed .path {
+  animation: dash-out 0.6s linear normal;
+  animation-fill-mode: forwards;
+}
+.hamburglar.is-closed .animate-path {
+  animation: rotate-out 0.6s linear normal;
+  animation-fill-mode: forwards;
+}
+
+.path {
+  stroke-dasharray: 240;
+  stroke-dashoffset: 240;
+  stroke-linejoin: round;
+}
+
+@keyframes dash-in {
+  0% {
+    stroke-dashoffset: 240;
+  }
+  40% {
+    stroke-dashoffset: 240;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash-out {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 240;
+  }
+  100% {
+    stroke-dashoffset: 240;
+  }
+}
+.burger-icon {
+  position: absolute;
+  padding: 20px 16px;
+  height: 68px;
+  width: 68px;
+}
+
+.burger-container {
+  position: relative;
+  height: 28px;
+  width: 36px;
+}
+
+.burger-bun-top,
+.burger-bun-bot,
+.burger-filling {
+  position: absolute;
+  display: block;
+  height: 4px;
+  width: 36px;
+  border-radius: 2px;
+  background: white;
+}
+
+.burger-bun-top {
+  top: 0;
+  transform-origin: 34px 2px;
+}
+
+.burger-bun-bot {
+  bottom: 0;
+  transform-origin: 34px 2px;
+}
+
+.burger-filling {
+  top: 12px;
+}
+
+.burger-ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 68px;
+  height: 68px;
+}
+
+.svg-ring {
+  width: 68px;
+  height: 68px;
+}
+
+.hamburglar.is-open .burger-bun-top {
+  animation: bun-top-out 0.6s linear normal;
+  animation-fill-mode: forwards;
+}
+.hamburglar.is-open .burger-bun-bot {
+  animation: bun-bot-out 0.6s linear normal;
+  animation-fill-mode: forwards;
+}
+
+.hamburglar.is-closed .burger-bun-top {
+  animation: bun-top-in 0.6s linear normal;
+  animation-fill-mode: forwards;
+}
+.hamburglar.is-closed .burger-bun-bot {
+  animation: bun-bot-in 0.6s linear normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bun-top-out {
+  0% {
+    left: 0;
+    top: 0;
+    transform: rotate(0deg);
+  }
+  20% {
+    left: 0;
+    top: 0;
+    transform: rotate(15deg);
+  }
+  80% {
+    left: -5px;
+    top: 0;
+    transform: rotate(-60deg);
+  }
+  100% {
+    left: -5px;
+    top: 1px;
+    transform: rotate(-45deg);
+  }
+}
+@keyframes bun-bot-out {
+  0% {
+    left: 0;
+    transform: rotate(0deg);
+  }
+  20% {
+    left: 0;
+    transform: rotate(-15deg);
+  }
+  80% {
+    left: -5px;
+    transform: rotate(60deg);
+  }
+  100% {
+    left: -5px;
+    transform: rotate(45deg);
+  }
+}
+@keyframes bun-top-in {
+  0% {
+    left: -5px;
+    bot: 0;
+    transform: rotate(-45deg);
+  }
+  20% {
+    left: -5px;
+    bot: 0;
+    transform: rotate(-60deg);
+  }
+  80% {
+    left: 0;
+    bot: 0;
+    transform: rotate(15deg);
+  }
+  100% {
+    left: 0;
+    bot: 1px;
+    transform: rotate(0deg);
+  }
+}
+@keyframes bun-bot-in {
+  0% {
+    left: -5px;
+    transform: rotate(45deg);
+  }
+  20% {
+    left: -5px;
+    bot: 0;
+    transform: rotate(60deg);
+  }
+  80% {
+    left: 0;
+    bot: 0;
+    transform: rotate(-15deg);
+  }
+  100% {
+    left: 0;
+    transform: rotate(0deg);
+  }
+}
+.hamburglar.is-open .burger-filling {
+  animation: burger-fill-out 0.6s linear normal;
+  animation-fill-mode: forwards;
+}
+
+.hamburglar.is-closed .burger-filling {
+  animation: burger-fill-in 0.6s linear normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes burger-fill-in {
+  0% {
+    width: 0;
+    left: 36px;
+  }
+  40% {
+    width: 0;
+    left: 40px;
+  }
+  80% {
+    width: 36px;
+    left: -6px;
+  }
+  100% {
+    width: 36px;
+    left: 0px;
+  }
+}
+@keyframes burger-fill-out {
+  0% {
+    width: 36px;
+    left: 0px;
+  }
+  20% {
+    width: 42px;
+    left: -6px;
+  }
+  40% {
+    width: 0;
+    left: 40px;
+  }
+  100% {
+    width: 0;
+    left: 36px;
+  }
+}
