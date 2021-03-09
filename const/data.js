@@ -50,9 +50,9 @@ const data = {
     // EXPERIENCE
     experience: [
         {
-            time: `April 2019 <br> to Oct 2020`,
+            time: `April 2019 to Oct 2020`,
             nameCompany: "Cybersoft Academy",
-            position: "Full Stack Developer",
+            position: "Front-end Developer",
             describtion:`
                 <ul style="list-style-type:disc;padding-left:16px">
                     <li>Developed an ecosystem, built a couple of websites to manage courses, users' information and employees in the company.</li>
@@ -154,7 +154,7 @@ const data = {
             position: "Full Stack Developer",
             describtion: `
                 <p class="mb-0 in">
-                    I often set aside sometime to pracitce and complete some my projects:
+                    I often set aside sometimes to pracitce and complete some my projects:
                 </>
                 <ul>
                     <li> 
@@ -422,18 +422,18 @@ const data = {
     education: [
         // Cybersoft
         {
-            time: 'Oct 2018 <br> to Jan 2019',
+            time: 'Oct 2018 to Jan 2019',
             name: 'Cybersoft Academy',
             des: 'CERTIFICATE OF FULL STACK DEVELOPER',
         },
         {
-            time: 'Mar 2017 <br> to Aug 2018',
+            time: 'Apr 2017 to Sep 2018',
             name: 'Cybersoft Academy',
             des: 'CERTIFICATE OF FRONT END DEVELOPER',
         },
         // FPT
         {
-            time: 'From 2013 <br> To 2015',
+            time: 'From 2013 to 2015',
             name: 'FPT Aptech',
             des: 'HIGHER DIPLOMA IN SOFTWARE ENGINEERING',
         }

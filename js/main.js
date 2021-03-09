@@ -31,7 +31,7 @@ if(data.intro.length > 0){
 }
 
 document.querySelector("#showCV").addEventListener("click", function(){
-    window.open('https://drive.google.com/file/d/1mxGKdIvumi6bOqXVdpVSnAvEQMnnLRnd/view?usp=sharing')
+    window.open('https://drive.google.com/file/d/1Tm7U3QXmZDhng9Ar9XQkeo66FnDTWkD2/view?usp=sharing')
 })
 
 
@@ -68,15 +68,15 @@ let i = 0;
 for (let res of data.experience) {
     $("#Experience .content").append(`
         <div class="d-flex mb-4">
-            <div class="" style="width: 110px">
+            <div class="" style="width: 105px">
                 <p class="time">${res.time}</p>
             </div>
             <div class="timeline" style="flex:1">
                 <div class="d-flex" style="justify-content:space-between">
-                    <h4 class="nameCom">${res.nameCompany}</h4>
                     <p class="time" style="font-size:0.9rem;display:none">${res.time}</p>
+                    <h4 class="nameCom">${res.position}</h4>
                 </div>
-                <h6 class="position">${res.position}</h6>
+                <h6 class="position">${res.nameCompany}</h6>
                 <p class="mt-3">
                 ${res.describtion}
                 </p>
@@ -97,7 +97,7 @@ import '../js/vendor/fancybox.js';
 let sumData = ""
 const ok = data.porfolio.map(x => {
     sumData += `
-        <div class="id id-${x.type} col-md-4 col-sm-6 col-12" style="display:flex; justify-content:between; height:auto ;margin-bottom:50px">
+        <div class="id id-${x.type} col-md-4 col-sm-6 col-12" style="display:flex; justify-content:between; height:auto ;margin-bottom:10px">
             <div class="customBox" data-id='${x.id}'>
                 <p class="name">${x.name}</p>
                 ${x.des}
@@ -145,15 +145,15 @@ let j = 0;
 for (let res of data.education) {
     $("#Education .content").append(`
         <div class="d-flex mb-4">
-            <div class="" style="width: 110px">
+            <div class="" style="width: 105px">
                 <p class="time">${res.time}</p>
             </div>
             <div class="timeline" style="flex:1;position:relative">
                 <div class="d-flex" style="justify-content:space-between">
-                <h4 class="nameCom">${res.name}</h4>
                     <p class="time" style="font-size:0.9rem;display:none">${res.time}</p>
+                    <h4 class="nameCom">${res.des}</h4>
                 </div>
-                <h6 class="position">${res.des}</h6>
+                <h6 class="position">${res.name}</h6>
             </div>
         </div>
     `);
