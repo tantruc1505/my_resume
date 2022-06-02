@@ -15,6 +15,7 @@
     "css-loader": "^4.2.2",
     "css-minimizer-webpack-plugin": "^1.2.0",
     "file-loader": "^6.1.0",
+    "gh-pages": "^4.0.0",
     "html-webpack-plugin": "^4.4.1",
     "isotope-layout": "^3.0.6",
     "jquery": "^3.5.1",
@@ -33,7 +34,8 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
     "build": "rm -rf build && webpack --mode production",
-    "clear": "rimraf build"
+    "clear": "rimraf build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -44,5 +46,5 @@
   "bugs": {
     "url": "https://github.com/tantruc1505/my_resume/issues"
   },
-  "homepage": "https://github.com/tantruc1505/my_resume#readme"
+  "homepage": "https://tantruc1505.github.io/my_resume"
 }
