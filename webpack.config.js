@@ -20,9 +20,10 @@ module.exports = {
         themeDark: './js/themeDark.js',
         themeLight: './js/themeLight.js'
     },
-    output: { 
+    output: {
         path: path.join(__dirname, '/build'),
         filename: '[name].[contenthash].js',
+        publicPath: '/my_resume/',
     },
 
     module: {
