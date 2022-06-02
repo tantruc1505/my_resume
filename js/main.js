@@ -31,7 +31,7 @@ if(data.intro.length > 0){
 }
 
 document.querySelector("#showCV").addEventListener("click", function(){
-    window.open('https://drive.google.com/file/d/1Tm7U3QXmZDhng9Ar9XQkeo66FnDTWkD2/view?usp=sharing')
+    window.open('https://drive.google.com/file/d/15reFS1JYwBryzCutPDMWmBferS-9WhQ-/view?usp=sharing')
 })
 
 
@@ -95,9 +95,9 @@ import '../js/vendor/fancybox.js';
 */
 /////////////////////////////////////////
 let sumData = ""
-const ok = data.porfolio.map(x => {
+data.porfolio.map(x => {
     sumData += `
-        <div class="id id-${x.type} col-md-4 col-sm-6 col-12" style="display:flex; justify-content:between; height:auto ;margin-bottom:10px">
+        <div class="id id-${x.type} col-md-4 col-sm-6 col-12" style="display:flex; min-height:180px ;justify-content:between">
             <div class="customBox" data-id='${x.id}'>
                 <p class="name">${x.name}</p>
                 ${x.des}
@@ -105,15 +105,7 @@ const ok = data.porfolio.map(x => {
         </div>
     `
 })
-
-{/* <div class="ok-col mt-5">
-                <div class="box1"></div>
-                <div class="box" data-id='${x.id}'>
-                    <p class="project">Project</p>
-                    
-                </div>
-            </div> */}
-$("#Portfolio .porfolio .row").append(sumData)
+$("#Portfolio .porfolio .isotope").append(sumData)
 $(".customBox").on("click", function () {
     const id = $(this).attr("data-id");
     console.log(id)

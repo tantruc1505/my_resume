@@ -15,7 +15,7 @@ import '../js/main.js';
 import '../js/particalAnimation.js';
 import '../js/myJS.js';
 // image
-import '../img/me.jpeg'
-import '../img/background.jpg'
-import '../img/background_copy.jpg'
+import '../images/meme.jpg'
+import '../images/background.jpg'
+import '../images/background_copy.jpg'
 import '../icons8-home-64.png'
