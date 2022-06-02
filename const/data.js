@@ -26,7 +26,12 @@ import '../image_project/CV/CreateCV_JOB.png'
 import '../image_project/CV/CreateCV_Project.png'
 import '../image_project/CV/CreateCV.png'
 import '../image_project/CV/CreateCV_Done.png'
-import { name } from 'file-loader';
+
+import '../image_project/BBC/bbc_manage_1.png'
+import '../image_project/BBC/bbc_manage_2.png'
+import '../image_project/BBC/bbc_portal_1.png'
+import '../image_project/BBC/bbc_portal_2.png'
+
 
 const data = {
 
@@ -84,7 +89,7 @@ const data = {
                 </>
                 <ul>
                     <li>
-                        <a class="link" href="https://dressing.selflearning.app" target="_blank">Dressing Room:</a>
+                        <a class="link" href="https://tantruc1505.github.io/dressing_room" target="_blank">Dressing Room:</a>
                         <span class="des">
                             A fundamental app is to simulate the woman dressing room.
                             <span class="tech">
@@ -94,7 +99,7 @@ const data = {
                         
                     </li>
                     <li>
-                        <a class="link" href="https://cinema.selflearning.app" target="_blank">Booking Cinema Ticket:</a>
+                        <a class="link" href="https://tantruc1505.github.io/cinema" target="_blank">Booking Cinema Ticket:</a>
                         <span class="des">
                             An app is to support users booking ticket in the cinema.
                             <span class="tech">
@@ -104,7 +109,7 @@ const data = {
                         
                     </li>
                     <li>
-                        <a class="link" href="https://course.selflearning.app" target="_blank">Course:</a>
+                        <a class="link" href="https://truc-course.herokuapp.com" target="_blank">Course:</a>
                         <span class="des">
                             A small system is to enroll courses before watching videos
                             <span class="tech">
