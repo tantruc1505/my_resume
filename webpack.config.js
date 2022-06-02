@@ -23,7 +23,6 @@ module.exports = {
     output: {
         path: path.join(__dirname, '/build'),
         filename: '[name].[contenthash].js',
-        publicPath: '/',
     },
 
     module: {
@@ -102,7 +101,7 @@ module.exports = {
         // Extract CSS ra khoi bundle thanh file rieng
         new MiniCssExtractPlugin({
             chunks: ['bundle', 'vendors','themeDark','themeLight'],
-            filename: '/[name].css',
+            filename: '[name].css',
             chunkFilename: "[name].css",
         }),
         // Khai bao cu phap su dung cac thu vien
