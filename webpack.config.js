@@ -95,7 +95,7 @@ module.exports = {
         new CleanWebpackPlugin(),
         // parse template duoi khac thanh HTML
         new HtmlWebpackPlugin({
-            chunks: ['bundle','themeDark'],
+            chunks: ['bundle','themeLight','themeDark'],
             template: './index.html',
             filename: 'index.html'
         }),
