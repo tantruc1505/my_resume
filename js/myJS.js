@@ -11,11 +11,11 @@ document.querySelector(".slider").onclick = function () {
     if ($(".changeTheme").hasClass("dark")) {
         $(".changeTheme").removeClass("dark");
         $(".changeTheme").addClass("light");
-        document.querySelector("[href='/themeDark.css']").setAttribute("href", "/themeLight.css")
+        document.querySelector("[href~='themeDark']").setAttribute("href", "/my_resume/themeLight.css")
     } else {
         $(".changeTheme").removeClass("light");
         $(".changeTheme").addClass("dark");
-        document.querySelector("[href='/themeLight.css']").setAttribute("href", "/themeDark.css")
+        document.querySelector("[href~='themeLight']").setAttribute("href", "/my_resume/themeDark.css")
     }
 }
 
