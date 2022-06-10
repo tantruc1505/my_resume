@@ -7,6 +7,7 @@ import Isotope from 'isotope-layout'
         Change theme
 */
 /////////////////////////////////////////
+document.querySelector("[href='/my_resume/themeLight.css']").remove()
 document.querySelector(".slider").onclick = function () {
     if ($(".changeTheme").hasClass("dark")) {
         $(".changeTheme").removeClass("dark");

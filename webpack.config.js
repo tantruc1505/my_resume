@@ -95,13 +95,13 @@ module.exports = {
         new CleanWebpackPlugin(),
         // parse template duoi khac thanh HTML
         new HtmlWebpackPlugin({
-            chunks: ['bundle','themeDark', 'themeLight'],
+            chunks: ['bundle', 'themeLight', 'themeDark'],
             template: './index.html',
             filename: 'index.html'
         }),
         // Extract CSS ra khoi bundle thanh file rieng
         new MiniCssExtractPlugin({
-            chunks: ['bundle', 'vendors','themeDark','themeLight'],
+            chunks: ['bundle', 'vendors','themeLight', 'themeDark'],
             filename: '[name].css',
             chunkFilename: "[name].css",
         }),
